@@ -19,3 +19,4 @@ parts:
   dracnmap:
     source: .
     plugin: dump
+    stage-packages: [nmap]
