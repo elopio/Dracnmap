@@ -13,10 +13,10 @@ confinement: strict
 apps:
   dracnmap:
     command: Dracnmap.sh
-    plugs: [network]
+    plugs: [network, network-observe]
 
 parts:
   dracnmap:
     source: .
     plugin: dump
-    stage-packages: [nmap]
+    stage-packages: [nmap, iputils-ping]
