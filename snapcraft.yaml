@@ -1,0 +1,21 @@
+name: dracnmap
+version: master
+summary: exploit the network and gathering information with nmap help
+description: |
+  Nmap command comes with lots of options that can make the utility more
+  robust and difficult to follow for new users. Hence Dracnmap is designed to
+  perform fast scaning with the utilizing script engine of nmap and nmap can
+  perform various automatic scanning techniques with the advanced commands.
+
+grade: stable
+confinement: strict
+
+apps:
+  dracnmap:
+    command: Dracnmap.sh
+    plugs: [network]
+
+parts:
+  dracnmap:
+    source: .
+    plugin: dump
